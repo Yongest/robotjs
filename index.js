@@ -1,4 +1,14 @@
 var robot = require('robotjs')
+
+const axios = require('axios')
+(async()=>{
+      const response = await  axios.get('https://sentence.iciba.com/index.php?callback=a&c=dailysentence&m=getdetail&title=2022-04-06&_=1649242108331')
+      console.log(response.data)
+    }
+)();
+
+
+return false
 var {
     exec,
 
@@ -50,21 +60,15 @@ function start() {
     }, 5000);
 }
 
-let nameList = ['读书分享群','Alien读书扯淡窝','媛创读书群','小uni','2011级化工群','数据结构与算法', '中国合伙人','羽毛球中南林广州','广州前端技术交流群','中南林安徽校友群','加速的朋友','坚持读书少数部落']
+let nameList = ['读书分享群','媛创读书群','小uni','2011级化工群','数据结构与算法', '中国合伙人','羽毛球中南林广州','广州前端技术交流群','中南林安徽校友群','加速的朋友']
 
 let msg = `机器人小智：
 
-樊登问作家周国平说：“人生到底有意义吗？”
-周国平用非常肯定的语气说道：“没有！一个人就是一团欲望，不满足就痛苦，满足了以后就无聊。人生就像钟摆一样，在痛苦和无聊当中摆动。人生本来是没有意义的。
-
-如果说人生没有意义，那么要生命有何用？如果活着只是为了吃喝，当个酒囊饭袋，那人生也太无趣了。如果人活着一辈子，只为了传宗接代、延续血脉，那和动物又有什么区别呢？
-那么，到底人生的真义在哪里呢？
-
-https://mp.weixin.qq.com/s/r_zcwp6voZG1knh48MEE_g
+You can't change the world, but you can change yourself.
+你无法改变世界，但你可以改变自己。
     
-2022年4月5日
+2022年4月6日
 `
-
 
 // 打开微信
 robot.keyTap('o', 'control')
