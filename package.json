@@ -1,0 +1,26 @@
+{
+  "name": "robotjs",
+  "version": "1.0.0",
+  "description": "微信自动发送信息",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "iconv-lite": "^0.6.3",
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yongest/robotjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yongest/robotjs/issues"
+  },
+  "homepage": "https://github.com/Yongest/robotjs#readme"
+}
